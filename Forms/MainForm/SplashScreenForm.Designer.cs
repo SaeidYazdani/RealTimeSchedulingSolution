@@ -37,28 +37,32 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textboxResults = new System.Windows.Forms.TextBox();
+            this.GhaforButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxNumA
             // 
-            this.textBoxNumA.Location = new System.Drawing.Point(12, 30);
+            this.textBoxNumA.Location = new System.Drawing.Point(16, 37);
+            this.textBoxNumA.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNumA.Name = "textBoxNumA";
-            this.textBoxNumA.Size = new System.Drawing.Size(163, 20);
+            this.textBoxNumA.Size = new System.Drawing.Size(216, 22);
             this.textBoxNumA.TabIndex = 0;
             // 
             // textBoxNumB
             // 
-            this.textBoxNumB.Location = new System.Drawing.Point(13, 57);
+            this.textBoxNumB.Location = new System.Drawing.Point(17, 70);
+            this.textBoxNumB.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNumB.Name = "textBoxNumB";
-            this.textBoxNumB.Size = new System.Drawing.Size(162, 20);
+            this.textBoxNumB.Size = new System.Drawing.Size(215, 22);
             this.textBoxNumB.TabIndex = 1;
             // 
             // buttonProcess
             // 
-            this.buttonProcess.Location = new System.Drawing.Point(13, 111);
+            this.buttonProcess.Location = new System.Drawing.Point(17, 137);
+            this.buttonProcess.Margin = new System.Windows.Forms.Padding(4);
             this.buttonProcess.Name = "buttonProcess";
-            this.buttonProcess.Size = new System.Drawing.Size(162, 23);
+            this.buttonProcess.Size = new System.Drawing.Size(216, 28);
             this.buttonProcess.TabIndex = 2;
             this.buttonProcess.Text = "DO THE RIGHT THING";
             this.buttonProcess.UseVisualStyleBackColor = true;
@@ -67,16 +71,18 @@
             // comboBoxOperation
             // 
             this.comboBoxOperation.FormattingEnabled = true;
-            this.comboBoxOperation.Location = new System.Drawing.Point(13, 84);
+            this.comboBoxOperation.Location = new System.Drawing.Point(17, 103);
+            this.comboBoxOperation.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxOperation.Name = "comboBoxOperation";
-            this.comboBoxOperation.Size = new System.Drawing.Size(162, 21);
+            this.comboBoxOperation.Size = new System.Drawing.Size(215, 24);
             this.comboBoxOperation.TabIndex = 3;
             // 
             // buttonHistory
             // 
-            this.buttonHistory.Location = new System.Drawing.Point(13, 226);
+            this.buttonHistory.Location = new System.Drawing.Point(17, 278);
+            this.buttonHistory.Margin = new System.Windows.Forms.Padding(4);
             this.buttonHistory.Name = "buttonHistory";
-            this.buttonHistory.Size = new System.Drawing.Size(75, 23);
+            this.buttonHistory.Size = new System.Drawing.Size(100, 28);
             this.buttonHistory.TabIndex = 4;
             this.buttonHistory.Text = "History";
             this.buttonHistory.UseVisualStyleBackColor = true;
@@ -84,11 +90,13 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(624, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(832, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -97,13 +105,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -111,18 +119,29 @@
             // 
             this.textboxResults.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textboxResults.Location = new System.Drawing.Point(181, 30);
+            this.textboxResults.Location = new System.Drawing.Point(241, 37);
+            this.textboxResults.Margin = new System.Windows.Forms.Padding(4);
             this.textboxResults.Multiline = true;
             this.textboxResults.Name = "textboxResults";
             this.textboxResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textboxResults.Size = new System.Drawing.Size(431, 399);
+            this.textboxResults.Size = new System.Drawing.Size(573, 490);
             this.textboxResults.TabIndex = 6;
+            // 
+            // GhaforButton
+            // 
+            this.GhaforButton.Location = new System.Drawing.Point(17, 172);
+            this.GhaforButton.Name = "GhaforButton";
+            this.GhaforButton.Size = new System.Drawing.Size(215, 81);
+            this.GhaforButton.TabIndex = 7;
+            this.GhaforButton.Text = "dastakhondi";
+            this.GhaforButton.UseVisualStyleBackColor = true;
             // 
             // SplashScreenForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(832, 543);
+            this.Controls.Add(this.GhaforButton);
             this.Controls.Add(this.textboxResults);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.comboBoxOperation);
@@ -131,7 +150,8 @@
             this.Controls.Add(this.textBoxNumA);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(640, 480);
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MinimumSize = new System.Drawing.Size(847, 580);
             this.Name = "SplashScreenForm";
             this.Text = "SplashScreenForm";
             this.Load += new System.EventHandler(this.SplashScreenForm_Load);
@@ -152,6 +172,7 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TextBox textboxResults;
+        private System.Windows.Forms.Button GhaforButton;
     }
 }
 

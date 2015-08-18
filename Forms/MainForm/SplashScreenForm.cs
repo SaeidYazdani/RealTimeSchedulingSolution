@@ -23,6 +23,13 @@ namespace Forms
 
             comboBoxOperation.SelectedIndex = 0;
 
+            GhaforButton.Click += delegate
+            {
+
+                MessageBox.Show("DAST AKHONDI IS UPSET!!!!!");
+            }; 
+
+
 
         }
 

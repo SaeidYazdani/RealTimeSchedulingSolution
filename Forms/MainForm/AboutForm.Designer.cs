@@ -28,33 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.taskTakerControl1 = new CustomControls.TaskTakerControl();
             this.SuspendLayout();
             // 
-            // label1
+            // taskTakerControl1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(73, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Developer : Saeid Yazdani";
+            this.taskTakerControl1.Location = new System.Drawing.Point(13, 13);
+            this.taskTakerControl1.Name = "taskTakerControl1";
+            this.taskTakerControl1.Size = new System.Drawing.Size(471, 440);
+            this.taskTakerControl1.TabIndex = 0;
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(624, 463);
+            this.Controls.Add(this.taskTakerControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AboutForm";
             this.Text = "AboutForm";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private CustomControls.TaskTakerControl taskTakerControl1;
     }
 }

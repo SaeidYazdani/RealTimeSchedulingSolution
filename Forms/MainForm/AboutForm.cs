@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomControls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace Forms.MainForm
         public AboutForm()
         {
             InitializeComponent();
+
+            taskTakerControl1.OnAccept += handleAcceptButton;
+        }
+
+        private void handleAcceptButton(object s, TaskControlAcceptedEventArgs e)
+        {
+            MessageBox.Show(e.TaskCount.ToString());
+            this.Close();
         }
     }
 }

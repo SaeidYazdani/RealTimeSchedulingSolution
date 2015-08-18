@@ -50,22 +50,17 @@ namespace Forms
                     break;
             }
 
-            //if (_resultForm == null)
-            //{
-            //    _resultForm = new ShowResultForm(result);
+            if (_resultForm == null)
+            {
+                _resultForm = new ShowResultForm(result);
+                _resultForm.FormClosed += RunWhenResultClosed;
+                _resultForm.Shown += delegate
+                {
 
-            //    _resultForm.FormClosed += RunWhenResultClosed;
-            //    {
-            //        textBoxNumA.Clear();
-            //        textBoxNumB.Clear();
-            //    }
-            //}
+                };
+            }
 
-           // _resultForm.ShowDialog();
-
-            //we do not really need the lines below
-            //srf.FormClosed -= runWhenResultClosed;
-            //srf = null;
+            _resultForm.ShowDialog();
 
             textboxResults.Text += result + Environment.NewLine ;
         }

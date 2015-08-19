@@ -50,22 +50,19 @@ namespace Forms
                     break;
             }
 
-            //add result to the textbox
-            textboxResults.Text += result + Environment.NewLine;
-
-            //Show result on a form
             if (_resultForm == null)
             {
                 _resultForm = new ShowResultForm(result);
-
                 _resultForm.FormClosed += RunWhenResultClosed;
+                _resultForm.Shown += delegate
                 {
-                    textBoxNumA.Clear();
-                    textBoxNumB.Clear();
-                }
+
+                };
             }
 
             _resultForm.ShowDialog();
+
+            textboxResults.Text += result + Environment.NewLine ;
         }
 
         private void ButtonHistory_Click(object sender, EventArgs e)

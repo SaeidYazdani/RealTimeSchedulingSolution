@@ -36,7 +36,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showScheduleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.textboxResults = new System.Windows.Forms.TextBox();
+            this.GhaforButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +86,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -95,17 +98,26 @@
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem});
+            this.aboutToolStripMenuItem,
+            this.showScheduleToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // aboutToolStripMenuItem
             // 
+            this.aboutToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // showScheduleToolStripMenuItem
+            // 
+            this.showScheduleToolStripMenuItem.Name = "showScheduleToolStripMenuItem";
+            this.showScheduleToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.showScheduleToolStripMenuItem.Text = "&Show Schedule";
+            this.showScheduleToolStripMenuItem.Click += new System.EventHandler(this.showScheduleToolStripMenuItem_Click);
             // 
             // textboxResults
             // 
@@ -118,11 +130,22 @@
             this.textboxResults.Size = new System.Drawing.Size(431, 399);
             this.textboxResults.TabIndex = 6;
             // 
+            // GhaforButton
+            // 
+            this.GhaforButton.Location = new System.Drawing.Point(13, 140);
+            this.GhaforButton.Margin = new System.Windows.Forms.Padding(2);
+            this.GhaforButton.Name = "GhaforButton";
+            this.GhaforButton.Size = new System.Drawing.Size(161, 66);
+            this.GhaforButton.TabIndex = 7;
+            this.GhaforButton.Text = "dastakhondi";
+            this.GhaforButton.UseVisualStyleBackColor = true;
+            // 
             // SplashScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.GhaforButton);
             this.Controls.Add(this.textboxResults);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.comboBoxOperation);
@@ -131,7 +154,7 @@
             this.Controls.Add(this.textBoxNumA);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(640, 480);
+            this.MinimumSize = new System.Drawing.Size(639, 479);
             this.Name = "SplashScreenForm";
             this.Text = "SplashScreenForm";
             this.Load += new System.EventHandler(this.SplashScreenForm_Load);
@@ -152,6 +175,8 @@
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.TextBox textboxResults;
+        private System.Windows.Forms.Button GhaforButton;
+        private System.Windows.Forms.ToolStripMenuItem showScheduleToolStripMenuItem;
     }
 }
 

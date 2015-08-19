@@ -1,6 +1,6 @@
 ﻿namespace Forms.MainForm
 {
-    partial class AboutForm
+    partial class SchedulerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.taskTakerControl1 = new CustomControls.TaskTakerControl();
+            this.schedulerControl1 = new CustomControls.SchedulerControl();
             this.SuspendLayout();
             // 
-            // taskTakerControl1
+            // schedulerControl1
             // 
-            this.taskTakerControl1.Location = new System.Drawing.Point(13, 13);
-            this.taskTakerControl1.Name = "taskTakerControl1";
-            this.taskTakerControl1.Size = new System.Drawing.Size(471, 440);
-            this.taskTakerControl1.TabIndex = 0;
+            this.schedulerControl1.Location = new System.Drawing.Point(47, 13);
+            this.schedulerControl1.Name = "schedulerControl1";
+            this.schedulerControl1.Size = new System.Drawing.Size(151, 107);
+            this.schedulerControl1.TabIndex = 0;
+            this.schedulerControl1.Text = "schedulerControl1";
             // 
-            // AboutForm
+            // SchedulerForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 463);
-            this.Controls.Add(this.taskTakerControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "AboutForm";
-            this.Text = "AboutForm";
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.schedulerControl1);
+            this.Name = "SchedulerForm";
+            this.Text = "SchedulerForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private CustomControls.TaskTakerControl taskTakerControl1;
+        private CustomControls.SchedulerControl schedulerControl1;
     }
 }
